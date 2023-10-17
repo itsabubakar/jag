@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'a1 a1 a2 a5'
+      'a3 a2 a2 a5';
+      grid-auto-flow: dense;
+  }
+
+.item1 { grid-area: a1; }
+.item2 { grid-area: a2; }
+.item3 { grid-area: a3; }
+.item4 { grid-area: a4; }
+.item5 { grid-area: a5; }
