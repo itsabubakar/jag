@@ -42,11 +42,11 @@ const Navbar = ({ type }) => {
                 </div>
 
                 <ul className={`${type === 'dark' && 'text-white'} lg:flex hidden items-center  gap-8 font-poppins text-sm`}>
-                    <li><NavLink onClick={() => console.log('foo')} to={"/about"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1')}>About</NavLink></li>
-                    <li><NavLink onClick={() => console.log('foo')} to={"/portfolio"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1')}>Portfolio</NavLink></li>
-                    <li><NavLink onClick={() => console.log('foo')} to={"/resume"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1')}>Résumé</NavLink></li>
-                    <li><NavLink onClick={() => console.log('foo')} to={"/calendar"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1')}>Calendar</NavLink></li>
-                    <li className='py-2 px-3'><NavLink onClick={() => console.log('foo')} to={"/contact"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#fff]' : 'pb-1')}>Contact</NavLink></li>
+                    <li><NavLink onClick={() => console.log('foo')} to={"/about"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1 hover:border-b-[#979797] hover:border-b')}>About</NavLink></li>
+                    <li><NavLink onClick={() => console.log('foo')} to={"/portfolio"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1 hover:border-b-[#979797] hover:border-b')}>Portfolio</NavLink></li>
+                    <li><NavLink onClick={() => console.log('foo')} to={"/resume"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1 hover:border-b-[#979797] hover:border-b')}>Résumé</NavLink></li>
+                    <li><NavLink onClick={() => console.log('foo')} to={"/calendar"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#040708]' : 'pb-1 hover:border-b-[#979797] hover:border-b')}>Calendar</NavLink></li>
+                    <li className='py-2 px-3'><NavLink onClick={() => console.log('foo')} to={"/contact"} className={({ isActive }) => (isActive ? 'border-b pb-1 border-b-[#fff]' : 'pb-1 hover:border-b-[#979797] hover:border-b')}>Contact</NavLink></li>
 
                 </ul>
                 <SocialLinks nav={true} type={type} />
