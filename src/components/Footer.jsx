@@ -1,10 +1,6 @@
 import LogoDark from '../assets/logos/Jag-dark.png'
 
-// icons
-import Youtube from '../assets/logos/youtube-gray.png'
-import Instagram from '../assets/logos/instagram-gray.png'
-import LinkedIn from '../assets/logos/linkedin-gray.png'
-import FaceBook from '../assets/logos/facebook-gray.png'
+
 
 import arrow from '../assets/logos/arrow.png'
 import SocialLinks from './SocialLinks'

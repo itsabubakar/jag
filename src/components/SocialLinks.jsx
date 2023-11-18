@@ -15,28 +15,34 @@ import YoutubeGray from '../assets/logos/youtube-gray.png'
 import InstagramGray from '../assets/logos/instagram-gray.png'
 import LinkedInGray from '../assets/logos/linkedin-gray.png'
 import FaceBookGray from '../assets/logos/facebook-gray.png'
-import { Link } from 'react-router-dom'
+
+// LinkedIn: https://ng.linkedin.com/in/joshua-gabriel-4699a2100
+
+// Facebook: https://www.facebook.com/profile.php?id=100000064922270&mibextid=9R9pXO
+// IG: https://instagram.com/akubo._?igshid=OGQ5ZDc2ODk2ZA==
+
+// YouTube: https://m.youtube.com/@joshuaakubogabriel6028/about#bottom-sheet
 
 const SocialLinks = ({ type, nav }) => {
     return (
         <div className=''>
             {
                 type === 'dark' ? <ul className={nav ? '  gap-4 lg:flex hidden' : 'flex  gap-4'}>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={Instagram} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={Facebook} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={Linkedin} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={Youtube} /></Link></li>
+                    <li><a target='_blank' href={'https://instagram.com/akubo'}><img className='h-4 w-4' src={Instagram} /></a></li>
+                    <li><a target='_blank' href={'https://www.facebook.com/profile.php?id=100000064922270&mibextid=9R9pXO'}><img className='h-4 w-4' src={Facebook} /></a></li>
+                    <li><a target='_blank' href={'https://ng.linkedin.com/in/joshua-gabriel'}><img className='h-4 w-4' src={Linkedin} /></a></li>
+                    <li><a target='_blank' href={'https://m.youtube.com/@joshuaakubogabriel6028'}><img className='h-4 w-4' src={Youtube} /></a></li>
                 </ul> : type === 'gray' ? <ul className={nav ? '  gap-4 lg:flex hidden' : 'flex  gap-4'}>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={InstagramGray} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={FaceBookGray} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={LinkedInGray} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={YoutubeGray} /></Link></li>
+                    <li><a target='_blank' href={'https://instagram.com/akubo'}><img className='h-4 w-4' src={InstagramGray} /></a></li>
+                    <li><a target='_blank' href={'https://www.facebook.com/profile.php?id=100000064922270&mibextid=9R9pXO'}><img className='h-4 w-4' src={FaceBookGray} /></a></li>
+                    <li><a target='_blank' href={'https://ng.linkedin.com/in/joshua-gabriel'}><img className='h-4 w-4' src={LinkedInGray} /></a></li>
+                    <li><a target='_blank' href={'https://m.youtube.com/@joshuaakubogabriel6028'}><img className='h-4 w-4' src={YoutubeGray} /></a></li>
 
                 </ul> : <ul className={nav ? '  gap-4 lg:flex hidden' : 'flex  gap-4'}>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={InstagramDark} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={FacebookDark} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={LinkedinDark} /></Link></li>
-                    <li><Link to={'/'}><img className='h-4 w-4' src={YoutubeDark} /></Link></li>
+                    <li><a target='_blank' href={'https://instagram.com/akubo'}><img className='h-4 w-4' src={InstagramDark} /></a></li>
+                    <li><a target='_blank' href={'https://www.facebook.com/profile.php?id=100000064922270&mibextid=9R9pXO'}><img className='h-4 w-4' src={FacebookDark} /></a></li>
+                    <li><a target='_blank' href={'https://ng.linkedin.com/in/joshua-gabriel'}><img className='h-4 w-4' src={LinkedinDark} /></a></li>
+                    <li><a target='_blank' href={'https://m.youtube.com/@joshuaakubogabriel6028'}><img className='h-4 w-4' src={YoutubeDark} /></a></li>
 
                 </ul>
             }
