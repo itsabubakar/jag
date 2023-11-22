@@ -219,6 +219,8 @@ const Portfolio = () => {
                     becomes EGUNGUN.
                 </SectionText>
 
+
+
                 {/* Three image grids */}
 
                 <div className="grid grid-cols-7 pb-32">
@@ -226,6 +228,7 @@ const Portfolio = () => {
                     <img src={imgFive} alt="performace images" className=" w-full h-full" />
                     <img src={imgSix} alt="performace images" className="col-span-3 w-full h-full" />
                 </div>
+
 
                 <SectionText
                     title={'NO MAN’S LAND (2021/22)'}
@@ -235,6 +238,18 @@ const Portfolio = () => {
                 >
 
                 </SectionText>
+
+                <section className="pb-32">
+                    <iframe
+                        width="100%"
+                        height="400px"
+                        src="https://www.youtube.com/embed/o2QM7IrqTg0"
+                        title="No man's land"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        loading="lazy"
+                    ></iframe>
+                </section>
 
                 <div className=" pb-32">
                     <div className="max-h-[284px]"><img src={imgSeven} alt="performace images" className=" w-full h-full" /></div>
